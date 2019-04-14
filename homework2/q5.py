@@ -16,7 +16,7 @@ def one(f):
     return lambda f: lambda x: f(f(x))'''
 
 def two(f):
-        return lambda x: f(f(x))
+    return lambda x: f(f(x))
 
 three = successor(two)
 four = successor(three)
@@ -24,8 +24,8 @@ four = successor(three)
 def church_to_int(n):
     #Convert the Church numeral n to a Python integer.
     #church_to_int(zero) --> 0
-    begin = 0
     
+    begin = 0
     def func(i):
         return i + 1
 
